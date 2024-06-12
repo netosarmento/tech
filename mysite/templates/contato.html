@@ -1,7 +1,5 @@
 {% load static %} 
 
-<!DOCTYPE html>
-<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -34,12 +32,10 @@
                     <div class="col-lg-8">
                         <h2>Pagina Oficial de Contatos:</h2>
                         <p class="lead">Este é o espaço onde voce acha os contatos oficiais da tech norte soluções.</p>
-                        <ul>
-                            <li>Whatsapp: </li>
-                            <li>Email: 00.</li>
-                            <li>Redes Sociais:</li>
-                            <li>Instagram, facebook, x. </li>
-                        </ul>
+                        <ul class="social-links">
+                            <li><a href="https://www.instagram.com/fromparaofc/?next=%2F" target="_blank"><img class="social" src="{% static 'img/instagram.svg' %}"></a>Instagram</li>
+                            <li><a href="https://wa.me/91920011778?text=Olá,%20estou%20interessado%20em%20seus%20serviços." target="_blank"><img class="social" src="{% static 'img/whatsapp.svg' %}"></a>Whatsapp</li>
+                       </ul>
                     </div>
                 </div>
             </div>
@@ -50,7 +46,7 @@
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h2>Contate nos:</h2>
-                        <p class="lead">Responderemos assim que possivel, obrigado.</p>
+                        <p class="lead">Responderemos assim que possivel, por favor, tente deixar sua solicitação com maior riqueza de detalhes.</p>
                     </div>
                 </div>
             </div>
@@ -64,4 +60,4 @@
         <!-- Core theme JS-->
         <script src="{% static 'js/script.js' %}"></script>
     </body>
-</html>
+
