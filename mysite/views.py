@@ -18,3 +18,7 @@ def contatos(request):
 def sobre(request):
     
     return render(request, 'sobre.html')
+
+def Ceo(request):
+    
+    return render(request, 'ceo.html')
