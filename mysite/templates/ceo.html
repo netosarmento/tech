@@ -12,9 +12,22 @@
 	
 
 </head>
-
+<style>
+	.back-arrow {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 24px;
+      }
+</style>
 <body>
-
+	<header>
+		<div class="back-arrow">
+			<a href="{% url 'home_page' %}" class="text-link no-underline" style="color: black;">
+			  &#8592; <!-- Código HTML para a seta esquerda -->
+			</a>
+		  </div>
+	</header>
 	<br>
 
 	<div class="container">
@@ -62,10 +75,10 @@
 
 
                    <ul class="social-links">
-                         <li><a href="https://www.instagram.com/sarmentoto?igsh=ZTBoOHAxamxjMHph" target="_blank"><img class="social" src="{% static 'img/instagram.svg' %}"></a></li>
-                         <li><a href="https://www.linkedin.com/in/carlos-jorge-sarmento-neto-1689a084?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img class="social" src="{% static 'img/linkedin.svg' %}"></a></li>
-                         <li><a href="https://github.com/netosarmento" target="_blank"><img class="social" src="{% static 'img/github.svg' %}"></a></li>
-                         <li><a href="https://wa.me/91920011778" target="_blank"><img class="social" src="{% static 'img/whatsapp.svg' %}"></a></li>
+                         <li><a href="https://www.instagram.com/sarmentoto?igsh=ZTBoOHAxamxjMHph" target="_blank"><img class="social" src="{% static 'img/instagram.svg' %}">Instagram</a></li>
+                         <li><a href="https://www.linkedin.com/in/carlos-jorge-sarmento-neto-1689a084?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img class="social" src="{% static 'img/linkedin.svg' %}">LinkedIn</a></li>
+                         <li><a href="https://github.com/netosarmento" target="_blank"><img class="social" src="{% static 'img/github.svg' %}">GitHub</a></li>
+                         <li><a href="https://wa.me/91920011778" target="_blank"><img class="social" src="{% static 'img/whatsapp.svg' %}">Whatsapp</a></li>
                     </ul>
 
 
@@ -88,13 +101,16 @@
 					<hr>
 
 					<p>Desenvolvedor Full stack em Formação.</p>
+                    <p>Projetos de Portfolio, estão no Github e Netlify:</p>
+                    <p>Links: 
+                    <a href="https://funny-melba-f5e2be.netlify.app/">Netlify</a><br>
+                    <a href="https://venerable-crumble-814159.netlify.app/album">Netlify</a><br>
+                    <a href="https://stalwart-croissant-cb695a.netlify.app/">Netlify</a><br>
+                    <a href="https://github.com/netosarmento">GitHub</a><br>
+                    <a href="http://www.frompara.com.br">FromPara</a> <!-- Adicionado o link do site da empresa -->
+                    </p>
 
-					<p>Projetos de Portfolio, estão no Github e Netlify:</p>
-					<p>Links: <a href="https://funny-melba-f5e2be.netlify.app/"> Netlify</a><br>  
-					<a href="https://venerable-crumble-814159.netlify.app/album"> Netlify</a></br>
-					<a href="https://stalwart-croissant-cb695a.netlify.app/"> Netlify</a></br>
-					<a href="https://github.com/netosarmento">Git Hub</a> </p>
-
+					
 					</div>
 
 			</div>
@@ -109,7 +125,7 @@
 
 					<hr>
 
-					<p>Python, Django, HTML/CSS(Bootstrap, Formantics), JavaScript/Jquery, APIs, C, Flask, MySQL, Git, Github.
+					<p>Python, Django, HTML/CSS(Bootstrap, Formantics), Java, JavaScript/Jquery, Flutter, APIs, C, Flask, MySQL, Git, Github.
 					Estrutura de Dados, Algoritimos, POO's, Lógica de Programação, Redes, Conhecimentos em Banco de Dados e práticas de seguranças
 					cibernéticas.</p>
 

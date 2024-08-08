@@ -1,4 +1,30 @@
 @charset "UTF-8";
+
+/* Adiciona uma imagem de fundo ao header */
+
+@charset "UTF-8";
+
+/* Adiciona uma imagem de fundo ao header */
+.header-bg {
+  background-image: url("{% static 'img/background1.jpg' %}"); /* Caminho para a imagem */
+  background-size: cover;  /* Ajusta a imagem para cobrir todo o fundo */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  background-attachment: fixed; /* Faz com que a imagem não se mova com o rolar da página */
+  height: 100vh; /* Faz o header ter altura de 100% da viewport */
+  width: 100%; /* Faz com que o header ocupe toda a largura da viewport */
+  display: flex; /* Flexbox para centralizar o conteúdo */
+  align-items: center; /* Alinha o conteúdo verticalmente no centro */
+  justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+  text-align: center; /* Centraliza o texto */
+  color: white; /* Cor do texto */
+}
+
+.container {
+  z-index: 1; /* Garante que o conteúdo do container apareça sobre a imagem de fundo */
+}
+
+
 /*!
 * Start Bootstrap - Scrolling Nav v5.0.6 (https://startbootstrap.com/template/scrolling-nav)
 * Copyright 2013-2023 Start Bootstrap

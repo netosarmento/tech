@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-##dhf#))49+iy9wthi7r=a_!tlb$&@msrmjv)-%-e_u@k$d)-e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -116,13 +116,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = '/static_local/'
+STATIC_URL = '/static/'
 
 # Diretórios onde os arquivos estáticos estão localizados
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-    os.path.join(BASE_DIR, "static_local")
-]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static_local")]
 
 # Diretório onde os arquivos estáticos serão coletados
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn', 'static_root')

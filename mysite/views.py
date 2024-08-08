@@ -19,6 +19,6 @@ def sobre(request):
     
     return render(request, 'sobre.html')
 
-def Ceo(request):
+def ceo(request):
     
     return render(request, 'ceo.html')
